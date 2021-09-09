@@ -1,0 +1,26 @@
+@use "../settings/layout";
+@use "../settings/font";
+
+h1 {
+  margin-top: 0;
+  margin-bottom: layout.$spacer-md;
+  font-weight: 700;
+  font-size: font.$font-size-xl;
+  @include layout.for-tablet-portrait-up {
+    font-size: 4rem;
+  }
+}
+
+h2 {
+  margin-top: 0;
+  margin-bottom: layout.$spacer-md;
+  font-size: font.$font-size-xl;
+  font-weight: 400;
+}
+
+h3 {
+  margin-top: 0;
+  margin-bottom: layout.$spacer-md;
+  font-size: font.$font-size-lg;
+  font-weight: 500;
+}

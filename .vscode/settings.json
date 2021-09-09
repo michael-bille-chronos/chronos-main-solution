@@ -1,0 +1,6 @@
+{
+  "diffEditor.wordWrap": "off",
+  "editor.minimap.maxColumn": 1200,
+  "prettier.printWidth": 250,
+  "prettier.singleQuote": true
+}

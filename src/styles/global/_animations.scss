@@ -1,0 +1,41 @@
+@use "../settings/ui";
+
+.list-enter-active,
+.list-leave-active {
+  transition: all ui.$transition-dur-long ui.$transition-ease;
+}
+
+.list-enter-from,
+.list-leave-to {
+  opacity: 0;
+  transform: translateX(30px);
+}
+
+.fade-modal-enter-active,
+.fade-modal-leave-active {
+  position: relative;
+  transition: opacity 0.5s;
+  z-index: 50;
+}
+
+.fade-modal-enter-from,
+.fade-modal-leave-to {
+  opacity: 0;
+}
+
+.slidedown-enter-active,
+.slidedown-leave-active {
+  transition: max-height 0.7s ease-in-out;
+}
+
+.slidedown-enter-to,
+.slidedown-leave-from {
+  overflow: hidden;
+  max-height: 1000px;
+}
+
+.slidedown-enter-from,
+.slidedown-leave-to {
+  overflow: hidden;
+  max-height: 0;
+}

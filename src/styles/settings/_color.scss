@@ -1,0 +1,24 @@
+$color-primary: #2ac4f4;
+$color-secondary: #15182f;
+$color-tertiary: #10de62;
+
+$color-text: #333333;
+$color-link: #1b7dde;
+
+$color-white: #ffffff;
+$color-black: #000000;
+
+$color-grey-very-light: #fbfbfb;
+$color-grey-light: #eaeaea;
+$color-grey-dark: #888888;
+
+$color-alert: #c62c2c;
+$color-success: #3fb943;
+
+$color-border: darken($color-grey-light, 5);
+
+$theme-colors: (
+  'primary': $color-primary,
+  'secondary': $color-secondary,
+  'tertiary': $color-tertiary,
+);
