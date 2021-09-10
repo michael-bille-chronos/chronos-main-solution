@@ -8,6 +8,7 @@
     <router-link class="logo" to="/" aria-label="Logo - Go to frontpage">
       <img class="logo__img" src="/img/logo.png" />
     </router-link>
+    <NotificationComponent />
   </header>
 </template>
 
@@ -15,10 +16,11 @@
 import { defineComponent } from 'vue';
 import useMainMenu from '@/composables/useMainMenu';
 import { ButtonComponent } from '@/components/_generic/_components';
+import NotificationComponent from '@/components/Base/NotificationComponent.vue';
 
 export default defineComponent({
   name: 'HeaderComponent',
-  components: { ButtonComponent },
+  components: { ButtonComponent, NotificationComponent },
   setup() {
     const { showMenu, toggleMenu } = useMainMenu();
 
