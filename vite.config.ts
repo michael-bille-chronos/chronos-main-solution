@@ -12,5 +12,12 @@ export default defineConfig({
   plugins: [vue()],
   server: {
     open: true,
+    proxy: {
+      '/api': {
+        target: 'https://staging.chronos-oa.com',
+        changeOrigin: true,
+        rewrite: (path) => path.replace(/^\/api/, ''),
+      },
+    },
   },
 });

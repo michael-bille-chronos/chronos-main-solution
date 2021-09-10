@@ -12,7 +12,6 @@
 <script lang="ts">
 import { defineComponent } from 'vue';
 import useNotifications from '@/composables/useNotifications';
-import { ButtonComponent } from '@/components/_generic/_components';
 
 export default defineComponent({
   name: 'NotificationComponent',
