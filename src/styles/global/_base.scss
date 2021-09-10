@@ -1,5 +1,4 @@
 @use "../settings/font";
-@use "../settings/color";
 
 * {
   box-sizing: border-box;
@@ -10,10 +9,10 @@ html {
 }
 
 body {
-  font-family: font.$type-public-sans;
+  font-family: font.$type-open-sans;
   font-size: font.$font-size-md;
-  font-weight: 300;
-  color: color.$color-text;
+  font-weight: 400;
+  color: var(--color-text);
   margin: 0;
   line-height: 1.5;
   overflow-x: hidden;
@@ -21,7 +20,7 @@ body {
 }
 
 :is(button, a, input):is(:focus, :focus-visible) {
-  outline: solid 2px color.$color-tertiary;
+  outline: solid 2px var(--color-tertiary);
 }
 
 :is(button, a, input):focus:not(:focus-visible) {

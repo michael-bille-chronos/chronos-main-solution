@@ -1,5 +1,6 @@
 @use "../settings/ui";
 
+// List
 .list-enter-active,
 .list-leave-active {
   transition: all ui.$transition-dur-long ui.$transition-ease;
@@ -11,6 +12,7 @@
   transform: translateX(30px);
 }
 
+// Fade modal
 .fade-modal-enter-active,
 .fade-modal-leave-active {
   position: relative;
@@ -23,6 +25,7 @@
   opacity: 0;
 }
 
+// Slide down
 .slidedown-enter-active,
 .slidedown-leave-active {
   transition: max-height 0.7s ease-in-out;

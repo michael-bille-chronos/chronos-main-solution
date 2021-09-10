@@ -1,0 +1,14 @@
+:root {
+  --color-primary: #00a8b5;
+  --color-secondary: #007179;
+  --color-tertiary: #2e1a47;
+
+  --color-text: #333333;
+  --color-link: #007179;
+}
+
+$theme-colors: (
+  'primary': var(--color-primary),
+  'secondary': var(--color-secondary),
+  'tertiary': var(--color-tertiary),
+);

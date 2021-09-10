@@ -74,7 +74,7 @@ $-checkbox-dimension: 13px;
         cursor: pointer;
         height: $-checkbox-dimension;
         width: $-checkbox-dimension;
-        border: solid 1px settings.$color-link;
+        border: solid 1px var(--color-link);
         border-radius: 2px;
       }
 
@@ -87,11 +87,11 @@ $-checkbox-dimension: 13px;
     }
 
     &:hover + #{$-base-class}__label::before {
-      background-color: lighten(settings.$color-link, 30);
+      // background-color: lighten(var(--color-link), 30);
     }
 
     &:checked + #{$-base-class}__label::before {
-      background-color: settings.$color-link;
+      background-color: var(--color-link);
     }
 
     &:checked + #{$-base-class}__label::after {
@@ -103,7 +103,7 @@ $-checkbox-dimension: 13px;
       width: 3px;
       border-bottom: 2px solid settings.$color-white;
       border-right: 2px solid settings.$color-white;
-      background-color: settings.$color-link;
+      background-color: var(--color-link);
     }
   }
 }

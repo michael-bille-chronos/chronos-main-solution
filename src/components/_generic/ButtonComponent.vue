@@ -12,7 +12,7 @@ export default defineComponent({
   props: {
     theme: {
       type: String,
-      validator: (prop: string) => ['primary', 'secondary', 'tertiary'].includes(prop),
+      validator: (prop: string) => ['primary', 'secondary', 'tertiary', 'blank'].includes(prop),
       default: 'primary',
     },
     size: {
@@ -34,6 +34,7 @@ export default defineComponent({
 
 <style scoped type="text/scss" lang="scss">
 @use "src/styles/settings/settings.scss";
+@use "src/styles/global/theme.scss";
 
 $-height-desktop: 48px;
 $-height-mobile: 40px;
@@ -75,13 +76,17 @@ $-icon-height: 20px;
     height: $-icon-height;
   }
 
-  @each $name, $color in settings.$theme-colors {
+  @each $name, $color in theme.$theme-colors {
     &--#{$name} {
       background-color: $color;
-      &:hover {
-        background-color: darken($color, 5);
-      }
+      // &:hover {
+      //   background-color: darken($color, 5);
+      // }
     }
+  }
+
+  &--blank {
+    @include settings.reset-button-style;
   }
 }
 </style>

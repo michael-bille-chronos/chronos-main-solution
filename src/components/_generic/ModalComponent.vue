@@ -140,7 +140,7 @@ $-max-height: calc(100vh - 400px);
     cursor: pointer;
     transition: color settings.$transition-ease settings.$transition-dur-short;
     &:hover {
-      color: settings.$color-secondary;
+      color: var(--color-secondary);
     }
   }
 

@@ -1,5 +1,7 @@
 <template>
-  <div>Main view</div>
+  <div>
+    <div style="background-color: hotpink; border: solid 10px gold; height: 2500px">Main view</div>
+  </div>
 </template>
 
 <script lang="ts">

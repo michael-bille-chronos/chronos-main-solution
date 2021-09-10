@@ -200,7 +200,7 @@ export default defineComponent({
 }
 
 .base {
-  fill: settings.$color-secondary;
+  fill: var(--color-secondary);
   opacity: 0;
   &--fill {
     opacity: 1;
@@ -209,7 +209,7 @@ export default defineComponent({
 }
 
 .base-logo {
-  fill: settings.$color-primary;
+  fill: var(--color-primary);
   opacity: 0;
   &--fill {
     opacity: 1;
@@ -219,7 +219,7 @@ export default defineComponent({
 
 .logo-letter {
   opacity: 1;
-  fill: settings.$color-primary;
+  fill: var(--color-primary);
 
   $-letterCount: 10;
 
@@ -234,7 +234,7 @@ export default defineComponent({
   stroke-dasharray: 300px;
   stroke-dashoffset: 300px;
   stroke-linecap: round;
-  stroke: settings.$color-primary;
+  stroke: var(--color-primary);
 
   &--draw {
     animation: draw 3s linear forwards;
@@ -242,7 +242,7 @@ export default defineComponent({
 }
 
 .line {
-  stroke: settings.$color-primary;
+  stroke: var(--color-primary);
   stroke-dasharray: 300px;
   stroke-dashoffset: 300px;
   stroke-width: 0.5px;
@@ -258,7 +258,7 @@ export default defineComponent({
   stroke-linecap: round;
   opacity: 0;
   fill: settings.$color-white;
-  stroke: settings.$color-primary;
+  stroke: var(--color-primary);
 
   &:nth-child(even) {
     stroke-width: 2px;
